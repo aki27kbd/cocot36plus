@@ -147,17 +147,17 @@ cocot36plusは中央に34mmトラックボールとスクロールリングを�
 
 ## カスタムキーコード
 
-  トラックボールの操作に関していくつかカスタムキーコードを設定することが可能です。
+  トラックボールの操作に関していくつかカスタムキーコードを設定することが可能です。スクロール関係のキーコードに関しては、デフォルトのファームでは無効になっています。（SCRL_MOはレイヤー4でのみ有効）
 
   Value    | Keycode   |Description
   ---------|-----------|-----------
-  `0x5DA7` | `CPI_SW`  |トラックボールのCPIを変更します。デフォルトのファームウェアでは、押すたびに500→750→1000→1250→500…という順番でCPIが変わります。
+  `0x5DA7` | `CPI_SW`  |トラックボールのCPIを変更します。デフォルトのファームウェアでは、押すたびに200→400→800→1600→3200→200…という順番でCPIが変わります。
   `0x5DA8` | `SCRL_SW` |スクロールモードにおけるセンサーの感度を変更します。数値が大きいほどスクロール量が小さくなります。
   `0x5DA9` | `ROT_R15` |マウスセンサーのＹ軸を時計回りに15度回転させます。
   `0x5DAA` | `ROT_L15` |マウスセンサーのＹ軸を反時計回りに15度回転させます。
-  `0x5DAB` | `SCRL_MO` |押されている間スクロールモードになります。
-  `0x5DAC` | `SCRL_TO` |押すたびにスクロールモードとマウスモードを切り替えます。
-  `0x5DAD` | `SCRL_IN` |スクロール方向を反転させます。
+  `0x5DAB` | `SCRL_MO` |押されている間スクロールモードになります。（デフォルトファームではレイヤー4でのみ有効）
+  `0x5DAC` | `SCRL_TO` |押すたびにスクロールモードとマウスモードを切り替えます。（デフォルトファームでは無効）
+  `0x5DAD` | `SCRL_IN` |スクロール方向を反転させます。（デフォルトファームでは無効）
 
   REMAPでカスタムキーコードを設定する場合はFunctionタブ下のカスタムキーコードを用いて設定することが可能です。  
   ![CustomKeycode_rev](/images/CustomKeycode.jpg)
@@ -180,6 +180,15 @@ cocot36plusは中央に34mmトラックボールとスクロールリングを�
   ![cocot46plus_bg_oled_2_2](https://user-images.githubusercontent.com/88039287/170499867-b430839b-f2f0-4163-afa2-c227184bd697.jpg)
 
   ![cocot46plus_bg_oled_3_4_5](https://user-images.githubusercontent.com/88039287/171883896-1a3b91cb-84b8-425c-b490-9affa5f42095.jpg)
+
+
+## Links
+
+  [【大注目！】トラックボール付き自作キーボード cocot36plus/coron47plus レビュー | Trackball Mechanical Keyboard Review](https://www.youtube.com/watch?v=GIpaJPnjrzo) (by Daihukuさん)  
+  トラックボールの使い心地、内部構造、スクロールリングなど紹介いただいています。
+
+  [Gallery on Twitter](https://twitter.com/search?q=%23cocot36plus&src=typed_query&f=image)
+
 
 
 ## 終わりに
