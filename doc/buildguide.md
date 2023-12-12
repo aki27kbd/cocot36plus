@@ -137,6 +137,9 @@ cocot36plusは中央に34mmトラックボールとスクロールリングを�
   - 裏面のBOOTボタンを押しながらRESETボタンを押し、ブートローダーモードに入ります。
   - その状態でRPI-RP2というドライブに[.uf2](https://github.com/aki27kbd/cocot36plus/blob/main/firmware/aki27_cocot36plus_auto_mouse.uf2)ファイルをドラッグ&ドロップすることでファームが書き込まれます。
 
+トラックボールを動かした際に自動でマウス専用レイヤーに移動するファームウェアも利用可能です。
+[こちら](https://github.com/aki27kbd/cocot36plus/blob/main/firmware/aki27_cocot36plus_v2_auto_mouse.uf2)を書き込んでご利用ください。
+
 キーマップは[vial](https://vial.rocks/)から更新可能です。  
 トラックボール、LED含めて上記.uf2ファイルで確認いただけます。
 
@@ -146,7 +149,7 @@ cocot36plusは中央に34mmトラックボールとスクロールリングを�
 
 ## カスタムキーコード
 
-  トラックボールの操作に関していくつかカスタムキーコードを設定することが可能です。スクロール関係のキーコードに関しては、デフォルトのファームでは無効になっています。（SCRL_MOはレイヤー4でのみ有効）
+  トラックボールの操作に関していくつかカスタムキーコードを設定することが可能です。（SCRL_MOはレイヤー4でのみ有効）
 
   Keycode   |Description
   ---------|-----------
