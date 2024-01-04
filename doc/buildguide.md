@@ -4,7 +4,8 @@
 
 ![cocot36plus_main01](/images/main_04.jpg)
 
-cocot36plus v2のビルドガイドになります。
+cocot36plus v2のビルドガイドになります。  
+v1のビルドガイドは[こちら](https://github.com/aki27kbd/cocot36plus/blob/main/v1/doc/buildguide.md)を参照してください。
 
 cocot36plusは中央に34mmトラックボールとスクロールリングを搭載したカラムスタッガード30%キーボードです。コンパクトながら豊富な機能を搭載しています。
 - 中央にトラックボールとスクロールリングを配置
@@ -137,8 +138,7 @@ cocot36plusは中央に34mmトラックボールとスクロールリングを�
   - 裏面のBOOTボタンを押しながらRESETボタンを押し、ブートローダーモードに入ります。
   - その状態でRPI-RP2というドライブに[.uf2](https://github.com/aki27kbd/cocot36plus/blob/main/firmware/aki27_cocot36plus_auto_mouse.uf2)ファイルをドラッグ&ドロップすることでファームが書き込まれます。
 
-トラックボールを動かした際に自動でマウス専用レイヤーに移動するファームウェアも利用可能です。
-[こちら](https://github.com/aki27kbd/cocot36plus/blob/main/firmware/aki27_cocot36plus_v2_auto_mouse.uf2)を書き込んでご利用ください。
+2024年1月以降出荷のデフォルトのファームウェアでは、トラックボールを動かした際に自動でマウス専用レイヤー（レイヤー4）に移動するように設定されています。それ以前の購入された方は[こちら](https://github.com/aki27kbd/cocot36plus/blob/main/firmware/aki27_cocot36plus_v2_vial.uf2)を書き込んでご利用ください。
 
 キーマップは[vial](https://vial.rocks/)から更新可能です。  
 トラックボール、LED含めて上記.uf2ファイルで確認いただけます。
@@ -159,7 +159,8 @@ cocot36plusは中央に34mmトラックボールとスクロールリングを�
   `ROT_L15` |マウスセンサーのＹ軸を反時計回りに15度回転させます。
   `SCRL_MO` |押されている間スクロールモードになります。（デフォルトファームではレイヤー4でのみ有効）
   `SCRL_TO` |押すたびにスクロールモードとマウスモードを切り替えます。（デフォルトファームでは無効）
-  `SCRL_IN` |スクロール方向を反転させます。（デフォルトファームでは無効）
+  `SCRL_IN` |スクロール方向を反転させます。
+  `AM_TOG` |自動マウスレイヤー切り替えのオンオフを切り替えます。
 
   vialでカスタムキーコードを設定する場合はUserタブ下のカスタムキーコードを用いて設定することが可能です。  
   ![CustomKeycode_rev](/images/CustomKeycode_v2.jpg)
@@ -174,6 +175,7 @@ cocot36plusは中央に34mmトラックボールとスクロールリングを�
   ---------|-----------
   Current Layer|現在のレイヤーを示します。
   Scroll Status|C:カーソル/S:スクロールモードを示します。
+  Auto Mouse Status|Y:自動マウスレイヤーオン/N:自動マウスレイヤーオフを示します。
   CPI|カーソルモードのCPIを示します。
   Scroll Divider|スクロールモードにおけるセンサーの感度を示します。数値が大きいほどスクロール量が小さくなります。
   Rotation Angle|マウスセンサーのY軸の回転角を示します。
